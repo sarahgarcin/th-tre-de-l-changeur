@@ -1,3 +1,5 @@
+@import '../fonts/stylesheet.css';
+
 // Margin variables
 $marginNormal: 20px;  
 $marginBig: $marginNormal *2;  
@@ -6,12 +8,12 @@ $marginSmall: $marginNormal/2;
 // Colors
 $mainColor: #fff200;
 $backgroundColor: #FFF;
-$gris: #4D4D4D;
+$gris: #3F3F3F;
 
 // Fonts
-$font: "Avenir Next Condensed", sans-serif;
+$font: "Avenir", sans-serif;
 $titleFont: "LMDLD", sans-serif;
-$subtitleFont: "Bebas Neue", sans-serif;
+$subtitleFont: "Bebas", sans-serif;
 
 // FontSize
 $menuSize: 16px;
