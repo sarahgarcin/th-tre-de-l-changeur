@@ -1,0 +1,277 @@
+  // I M P O R T
+  // -------------- MOBILE-FIRST --------------
+  @import "_variables.scss";
+
+  *{
+    box-sizing: border-box;
+  	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body{
+  	margin: 0; 
+    font-size: $textSize; 
+    font-family: $font;
+    background: $backgroundColor;
+    line-height: 1.4;
+    color: #000;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  // -------------- RESET.CSS --------------
+  ul, ol{margin:0; padding:0;}
+  li{list-style:none;}
+  a{color: $gris;text-decoration: none;}
+  a:visited{color: #000;}
+  a:hover{color: #000;}
+  img {width: 100%;}
+  figure{margin:0;}
+  figcaption{
+    font-size: .8em;
+    &::before{
+      content: '⬇ ';
+    }
+    p{
+      margin:0; 
+      font-size: .8em;
+      display: inline-block;
+    }
+  }
+  p{
+    font-size: $textSize; 
+    &:last-child{
+      margin-bottom:0;
+    }
+  }
+  
+  h1{
+    font-size: 3rem;
+    margin-top:$marginSmall;
+    margin-bottom: $marginNormal;
+    line-height: 1.2;
+    font-weight: 500;
+    font-family: $titleFont;
+    color: $gris;
+  }
+  h2{
+    color: $gris;
+    font-size: 40px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-family: $titleFont;
+    font-weight: normal;
+    margin:0;
+  }
+
+  h2 + ul{
+    margin-top: $marginNormal;
+  }
+
+  h3{
+    font-size:$textSize; 
+    font-weight: normal;
+    margin:0;
+  }
+
+
+  h4{
+    font-weight: normal;
+    margin: 0; 
+  }
+
+  h5{
+    margin-top: $marginBig;
+    margin-bottom: $marginSmall;
+  }
+
+  blockquote{
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    border-left: 5px solid rgba(17, 33, 77, 0.2);
+  }
+
+
+  video, iframe{
+    width: 100%;
+  }
+
+  figure{
+    &.border{
+      border: 0.1em solid rgba(0,0,0,.1);
+      box-shadow: 0 1px 4px rgba(0,0,0,.1);
+    }
+  }
+
+
+  // -------------- IMPORT TEMPlATES STYLES --------------
+  @import "header.scss";
+  @import "home.scss";
+
+
+  // -------------- MOBILE-FIRST GENERAL --------------
+  .show-for-small-only{
+  	display:block;
+  }
+
+  .hide-for-small-only{
+  	display:none;
+  }
+
+  .bandeau{
+    width: 100%;
+    margin-top: 100px;
+    background: $mainColor;
+    padding-left:$marginBig;
+    padding-top: $marginNormal;
+    padding-bottom: $marginNormal;
+    h2{
+      margin:0;
+    }
+  }
+
+  .cover-wrapper{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    filter: grayscale(1) contrast(200%);
+    position: absolute; 
+    z-index: -1;
+    top:-50px; 
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .col-text{
+    background: #FFF;
+    margin-top: $marginBig;
+    margin-bottom: $marginBig;
+    border-left: 15px solid $mainColor;
+    padding: $marginBig;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    h2{
+      font-family: $subtitleFont; 
+      letter-spacing: 2px; 
+      font-size: 35px;
+    }
+  }
+
+
+
+  main{
+    padding: 90px 0; 
+    font-size: $textSize;
+    width: 100%;
+    margin:0px auto;
+    min-height: 83vh;
+    .content{
+      position: relative;
+      padding: 0 $marginBig;
+      figure{
+        margin: $marginNormal 0;
+      }
+      ol{
+        padding-left: $marginBig;
+        li{
+          list-style: decimal;
+        }
+      }
+    }
+  } 
+
+  .pdfs-wrapper{
+    & > li{
+      list-style: none;
+      margin-bottom: $marginSmall;
+      a{
+        color: $gris; 
+        transition:color 0.5s ease; 
+        text-transform: uppercase;
+        background: $mainColor;
+        padding: 4px 4px 2px 4px;
+        text-align: center; 
+        font-family: $subtitleFont; 
+        letter-spacing: 0.02em; 
+        &:hover{color: #000;}
+        &::before{
+          content: '⬇ ';
+          color: $gris;
+          background: $mainColor;
+          padding-right: 5px;
+        }
+      }
+      
+    }
+  }
+
+  .prog-list-wrapper{
+    padding: 0 $marginBig;
+    & > ul > li{
+      padding: $marginBig;
+    }
+    h2{
+      font-size: 30px;
+    }
+    h3{
+      font-size: 25px;
+      color: $gris; 
+      font-family: $subtitleFont; 
+      letter-spacing: 0.02em; 
+      margin: $marginSmall 0px $marginNormal 0;
+    }
+    h4{
+      font-size: 18px;
+      color: $gris; 
+      font-family: $subtitleFont; 
+      letter-spacing: 0.02em; 
+      margin-bottom: $marginSmall;
+    }
+    .lien-billeterie{
+      margin-top: $marginNormal;
+      border-left: 4px solid $mainColor;
+      padding: 4px $marginSmall; 
+      text-transform: uppercase;
+      font-family: $subtitleFont;
+      a{color: $gris; transition:color 0.5s ease; &:hover{color: #000;}}
+      letter-spacing: 0.02em; 
+    }
+  }
+
+  footer{
+    background: $mainColor; 
+    padding: $marginNormal $marginBig;
+    font-family: $subtitleFont;
+    letter-spacing: 0.02em; 
+    p{
+      margin:0;
+    }
+    .socialnetworks{
+      text-align: right;
+    }
+  }
+
+
+// -------------- DESKTOP GENERAL --------------
+@media only screen and (min-width: 48em){
+  .show-for-small-only{
+      display:none !important;
+  }
+  .hide-for-small-only{
+      display:block !important;
+  }
+
+  main {
+    .content{
+      padding: 0; 
+    }
+  }
+
+}
+
+
+
+
+
