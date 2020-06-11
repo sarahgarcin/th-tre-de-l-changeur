@@ -10,8 +10,14 @@ fields:
   genre: 
     label: Genre
     type: text
+  distribution: 
+    label: Distribution
+    type: textarea
   dates: 
     label: Dates 
+    type: markdown
+  hours: 
+    label: Heures et infos complémentaires
     type: markdown
   pdfs: 
     label: pdfs

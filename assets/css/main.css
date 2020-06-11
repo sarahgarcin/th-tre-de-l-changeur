@@ -181,59 +181,39 @@ main {
       main .content ol li {
         list-style: decimal; }
 
-.pdfs-wrapper > li {
-  list-style: none;
-  margin-bottom: 10px; }
-  .pdfs-wrapper > li a {
-    color: #3F3F3F;
-    -webkit-transition: color 0.5s ease;
-    -o-transition: color 0.5s ease;
-    transition: color 0.5s ease;
-    text-transform: uppercase;
-    background: #fff200;
-    padding: 4px 4px 2px 4px;
-    text-align: center;
-    font-family: "Bebas", sans-serif;
-    letter-spacing: 0.02em; }
-    .pdfs-wrapper > li a:hover {
-      color: #000; }
-    .pdfs-wrapper > li a::before {
-      content: '⬇ ';
-      color: #3F3F3F;
-      background: #fff200;
-      padding-right: 5px; }
-
 .prog-list-wrapper {
   padding: 0 40px; }
   .prog-list-wrapper > ul > li {
     padding: 40px; }
   .prog-list-wrapper h2 {
     font-size: 30px; }
+  .prog-list-wrapper .hours p {
+    margin-top: 0; }
   .prog-list-wrapper h3 {
-    font-size: 25px;
+    font-size: 19px;
     color: #3F3F3F;
     font-family: "Bebas", sans-serif;
     letter-spacing: 0.02em;
     margin: 10px 0px 20px 0; }
   .prog-list-wrapper h4 {
-    font-size: 18px;
+    font-size: 19px;
     color: #3F3F3F;
     font-family: "Bebas", sans-serif;
     letter-spacing: 0.02em;
     margin-bottom: 10px; }
-  .prog-list-wrapper .lien-billeterie {
-    margin-top: 20px;
+  .prog-list-wrapper .lien-billeterie, .prog-list-wrapper .pdfs-wrapper > li {
+    margin-top: 15px;
     border-left: 4px solid #fff200;
     padding: 4px 10px;
     text-transform: uppercase;
     font-family: "Bebas", sans-serif;
     letter-spacing: 0.02em; }
-    .prog-list-wrapper .lien-billeterie a {
+    .prog-list-wrapper .lien-billeterie a, .prog-list-wrapper .pdfs-wrapper > li a {
       color: #3F3F3F;
       -webkit-transition: color 0.5s ease;
       -o-transition: color 0.5s ease;
       transition: color 0.5s ease; }
-      .prog-list-wrapper .lien-billeterie a:hover {
+      .prog-list-wrapper .lien-billeterie a:hover, .prog-list-wrapper .pdfs-wrapper > li a:hover {
         color: #000; }
 
 footer {
