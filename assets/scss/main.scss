@@ -104,6 +104,11 @@
     }
   }
 
+  strong{
+    font-weight: normal;
+    background: $mainColor;
+  }
+
 
   // -------------- IMPORT TEMPlATES STYLES --------------
   @import "header.scss";
