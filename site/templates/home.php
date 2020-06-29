@@ -9,6 +9,9 @@
 			<div class="maintenance-wrapper col-text col-sm-8 col-sm-offset-2">
 				<?= $page->maintenance()->kt()?>
 			</div>
+			<div class="pass-wrapper col-text col-sm-8 col-sm-offset-2">
+				<?= $page->pass()->kt()?>
+			</div>
 			<div class="edito-wrapper col-text col-sm-8 col-sm-offset-2">
 				<?= $page->edito()->kt()?>
 			</div>
@@ -56,11 +59,13 @@
 										<?php endforeach;?>
 									</ul>
 								<?php endif;?>
-								<div class="lien-billeterie">
-									<a href="<?= $child->billeterie()?>" title="<?= $child->title()?>" target="_blank">
-										Réservez votre billet
-									</a>
-								</div>
+								<?php if($child->billeterie()->isNotEmpty()):?>
+									<div class="lien-billeterie">
+										<a href="<?= $child->billeterie()?>" title="<?= $child->title()?>" target="_blank">
+											Réservez votre billet
+										</a>
+									</div>
+								<?php endif;?>
 							</div>
 						</li>
 					<?php endforeach?>

@@ -15,6 +15,9 @@ fields:
   ateliers: 
     label: Texte - ateliers
     type: markdown
+  pass: 
+    label: Texte - pass illimité
+    type: markdown
   
 
 
